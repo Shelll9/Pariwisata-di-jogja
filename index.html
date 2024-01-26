@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pariwisata Jogja</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                overflow-x: hidden;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            .column {
+                float: left;
+                width: 25%;
+                padding: 0 10px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .row {
+                margin: 0 -5px;
+            }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            @media screen and (max-width: 800px) {
+                .column {
+                    width: 75%;
+                    display: block;
+                    margin-bottom: 20px;
+                }
+            }
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                padding: 5px;
+                text-align: center;
+                background-color: #ffffff;
+                border-radius: 10px;
+            }
+            .card img {
+                border-radius: 10px;
+            } 
+            .modal-body img{
+                width: 70%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">PARIWISATA JOGJA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeri.html">Galeri Foto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tempat Wisata/Villa</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#sectionVilla">Villa</a></li>
+                                <li><a class="dropdown-item" href="#sectionTaman">Taman</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div style="width: 100%;">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+                
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/Heha Sky View.jpg" alt="Heha SKy View" class="d-block" style="width: 100%; height: 100vh;">
+                    <div class="carousel-caption">
+                    <h3>Heha Sky View</h3>
+                    <p>Heha Sky View dengan pemandangan terbaik kota Yogyakarta, terletak di kawasan perbukitan Gunungkidul berjarak 40 menit dari pusat kota.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/malioboro.jpg" alt="Malioboro" class="d-block" style="width: 100%; height: 100vh;">
+                    <div class="carousel-caption">
+                    <h3>Jalan Malioboro</h3>
+                    <p>Jalan Malioboro merupakan salah satu jalan dari tiga jalan di Kota Yogyakarta yang membentang dari Tugu Yogyakarta sampai titik nol.</p>
+                    </div> 
+                </div>
+                <div class="carousel-item">
+                    <img src="image/candi borobudur.webp" alt="Candi Borobudur" class="d-block" style="width: 100%; height: 100vh;">
+                    <div class="carousel-caption">
+                    <h3>Pantai Kuta</h3>
+                    <p>Candi Borobudur adalah sebuah candi Buddha yang terletak di Borobudur, Magelang, Jawa Tengah, Indonesia. Candi ini terletak kurang lebih 100 km di sebelah barat daya Semarang, 86 km di sebelah barat Surakarta, dan 40 km di sebelah barat laut Yogyakarta.</p>
+                    </div>  
+                </div>
+                </div>
+                
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <h3 class="text-center" id="sectionTaman">Wisata Jogja</h3>
+        <hr>
+        <br><br><br><br>
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                <h3><img src="image/taman-sari.png" width="100%"></h3>
+                <p><b>Taman Sari</b></p>
+                <p>
+                    Taman Sari Yogyakarta dibuka setiap hari dengan waktu operasional pukul 09.00 hingga 15.00 WIB. Lokasinya strategis di pusat kota Jogja membuat tempat ini menjadi jujukan bagi banyak wisatawan. Harga tiket untuk wisatawan domestik dikenakan Rp 5.000/orang, sedangkan untuk wisatawan internasional atau asing Rp 15.000/orang
+                </p>
+                <p><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-monkey">Lihat</button></p>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <h3><img src="image/obelix hills.jpg" width="100%"></h3>
+                <p><b>Obelix Hills</b></p>
+                <p>
+                    Obelix Hills merupakan objek wisata baru yang terletak di desa Wukirharjo, Prambanan, Sleman, Yogyakarta. Letaknya di atas bukit batu kuno seluas 8 hektar, sebelah tenggara Candi Prambanan, dan merupakan bagian dari Dataran Tinggi Siwa. Daya tarik utama dari Obelix Hills adalah pemandangan matahari terbenam yang menakjubkan sehingga menjadikannya tempat yang populer bagi pengunjung.
+                </p>
+                <p><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-gajah">Lihat</button></p>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                <h3><img src="image/he ha ocean view.jpg" width="100%"></h3>
+                <p><b>HeHa Ocean View</b></p>
+                <p>
+                    Tempat wisata ini berlokasi di Kecamatan Patuk, Gunungkidul, dan masuk tergolong baru. HeHa Ocean View masih berada di bawah manajemen yang sama dengan tempat wisata HeHa Sky View di Kecamatan Patuk, Gunungkidul. Jika HeHa Sky View menawarkan pemandangan kota dengan lampu-lampu yang memikat, HeHa Ocean View menawarkan pemandangan laut selatan yang indah, angin sepoi-sepoi khas pantai, dengan pertunjukkan lampu yang mengesankan. HeHa Ocean View berlokasi tepat di tepi tebing, sehingga pemandangan laut lepas bisa langsung kamu nikmati kala berkunjung ke sana.
+                </p>
+                <p><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-dadari">Lihat</button></p>
+              </div>
+            </div>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="modal fade" id="modal-monkey" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Taman Sari</h4>
+                    </div>
+                    <div class="modal-body" style="text-align: center;">
+                        <img src="image/taman sari2.jpg" width="100%">
+                        <br><br>
+                        <p>
+                            Taman Sari Yogyakarta atau Taman Sari Keraton Yogyakarta (Jawa: ꦠꦩꦤ꧀ꦱꦫꦶ​ꦔꦪꦺꦴꦒꦾꦏꦂꦠ, translit. Tamansari Ngayogyakarta) 
+                            adalah situs bekas taman atau kebun istana Keraton Ngayogyakarta Hadiningrat, yang dapat dibandingkan dengan Taman Sari 
+                            Surakarta dan Kebun Raya Bogor sebagai kebun Istana Bogor. Kebun ini dibangun pada zaman Sultan Hamengku Buwono I (HB I) pada 
+                            tahun 1758-1765/9. Awalnya, taman yang mendapat sebutan "The Fragrant Garden" ini memiliki luas lebih dari 10 hektare dengan 
+                            sekitar 57 bangunan baik berupa gedung, kolam pemandian, jembatan gantung, kanal air, maupun danau buatan beserta pulau buatan 
+                            dan lorong bawah air. Kebun yang digunakan secara efektif antara 1765-1812 ini pada mulanya membentang dari barat daya kompleks
+                             Kedhaton sampai tenggara kompleks Magangan. Namun saat ini, sisa-sisa bagian Taman Sari yang dapat dilihat hanyalah yang 
+                             berada di barat daya kompleks Kedhaton saja.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="modal fade" id="modal-gajah" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Obelix Hills</h4>
+                    </div>
+                    <div class="modal-body" style="text-align: center;">
+                        <img src="image/obelix hills2.jpg" width="100%">
+                        <br><br>
+                        <p>
+                            Obelix Hills merupakan salah satu objek wisata baru yang terletak di Dusun Klumprit I, II, Kalurahan Wukirharjo, 
+                            Kapanewon Prambanan, Kabupaten Sleman, Yogyakarta. Obelix Hills berdiri di atas bukit batu purba dengan luas 8 
+                            hektare, yang letaknya di sebelah tenggara Candi Prambanan dan termasuk ke dalam Shiva Plateau. Shiva Plateau 
+                            atau bisa disebut kompleks dataran tinggi siwa muncul berdasarkan dari banyaknya penemuan peninggalan budaya
+                            Hindu yang tersebar di kawasan tersebut. 
+                            Obelix Hills menjadi objek wisata yang menawarkan pemandangan alam yang
+                            masih asri dan view sunset Yogyakarta dari atas. Tidak hanya itu, di Obelix Hills juga terdapat beberapa fasilitas 
+                            yang dapat dinikmati oleh pengunjung seperti 30 spot foto, restoran, mushola, area parkir yang luas, toilet yang 
+                            bersih, gampling, dan sebagainya. Sejak resmi dibuka pada 5 Mei 2021 lalu, Obelix Hills sudah dapat dikunjungi 
+                            oleh masyarakat umum dengan tetap memperhatikan protokol kesehatan yang berlaku.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="modal fade" id="modal-dadari" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">HeHa Ocean View</h4>
+                    </div>
+                    <div class="Hamparan Bunga Eceng Gondok, Danau Yah Malet" style="text-align: center;">
+                        <img src="image/he ha ocean view2.jpg" width="100%">
+                        <br><br>
+                        <p>
+                            Salah satu destinasi wisata favorit yang menawarkan pemandangan terbaik kota Yogyakarta dan sekitarnya “dari lantai 2”. 
+                            Terletak di kawasan perbukitan Gunungkidul, HeHa Sky View hanya berjarak 40 menit dari pusat Kota Yogyakarta.
+                            HeHa Sky View juga menyediakan restoran berkonsep modern dengan menu yang lezat dan berbagai food stall yang bisa menjadi 
+                            alternatif untuk mencicipi aneka jenis kuliner. Jangan lupa untuk mengabadikan momen di beragam spot foto yang cantik untuk selfie atau foto bersam
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>   
+            </div>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br>
+        <h3 class="text-center" id="sectionVilla">Villa Bali</h3>
+        <hr>
+        <br><br><br><br>
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                <h3><img src="image/Villa Sunset.jpg" width="100%"></h3>
+                <p><b>Villa Sunset</b></p>
+                <p>
+                    Siapa yang pernah menyaksikan film “Ada Apa Dengan Cinta 2”? Jika pernah, kamu pasti menyadari villa indah yang pernah viral dibincangkan masyarakat. Berlokasi di Sambikerep, Bangunjiwo, Kec. Kasihan, Bantul, DI Yogyakarta, villa ini menawarkan suasana penginapan yang nyaman dan asri, meski di tengah pedesaan.
+
+                </p>
+                <p><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-wanabucu">Lihat</button></p>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <h3><img src="image/villa Padi.jpg" width="100%"></h3>
+                <p><b>Villa Padi</b></p>
+                <p>
+                    Saat kamu mencari penginapan dengan ketenangan, Villa Padi Yogyakarta patut kamu masukkan pilihan. Berlokasi di kaki Gunung Merapi sehingga jauh dari keramaian kota dan membuat suasana liburanmu lebih damai dan santai. Ditambah, villa ini dikelilingi oleh pepohonan hijau, juga persawahan yang akan membuatmu semakin nyaman.
+                </p>
+                <p><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-madara">Lihat</button></p>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                <h3><img src="image/kaliurang.jpg" width="100%"></h3>
+                <p><b>D'Kaliurang Resort</b></p>
+                <p>
+                    Buat kamu yang mencari villa nyaman di Jogja dengan konsep unik, estetik, juga Instagramable, penginapan ini cocok untukmu! Kamu akan diberikan tiga pilihan untuk rumahnya yaitu Bambu House, Kayu House, atau Glamping (Glamour Camping). Ketiganya punya daya tariknya sendiri untuk kamu pilih, yang terpenting adalah villa pilihanmu adalah villa yang kamu butuhkan dari segi fasilitas, juga yang kamu inginkan dari segi konsep.
+                </p>
+                <p><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-sweet">Lihat</button></p>
+              </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="modal fade" id="modal-wanabucu" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Villa Sunset</h4>
+                    </div>
+                    <div class="modal-body" style="text-align: center;">
+                        <img src="image/villa sunset2.jpg" width="100%">
+                        <br><br>
+                        <p>
+                            Liburan akan semakin sempurna ditemani dengan suasana pepohonan hijau saat menikmati private pool di villa ini. Selain itu, Villa Sunset memiliki spot terbaik untuk menikmati sunset dan mengagumi keindahan Bukit Menoreh, dan kamu juga bisa barbekyu-an menggunakan alat yang disediakan!
+                        </p>
+                        <p>Alamat: Daerah Sambikerep, Bangunjiwo, Kec. Kasihan, Bantul, DI Yogyakarta</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="button btn btn-primary" href="https://www.booking.com/hotel/id/villa-sunset-jogjakarta.id.html">Pesan</a>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="modal fade" id="modal-madara" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Villa Padi</h4>
+                    </div>
+                     <div class="modal-body" style="text-align: center;">
+                        <img src="image/Villa padi2.jpg"width="100%">
+                        <br><br>
+                        <p>
+                            Nggak hanya pemandangan dan nuansanya saja, fasilitas yang diberikan pun terbilang sangat lengkap sesuai dengan kebutuhan. Mulai dari AC, flatscreen TV, teras yang luas, balkon, gazebo, hingga kolam renang pribadi! 
+                        </p>
+                        <p>
+                            Alamat:  Jl. Cangkringan KM. 2, Pusmalang, Wukisari, Kec. Cangkringan, DI Yogyakarta
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="button btn btn-primary" href="https://www.traveloka.com/id-id/hotel/indonesia/villa-padi-cangkringan-3000010001529">Pesan</a>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="modal fade" id="modal-sweet" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">D'Kaliurang Resort</h4>
+                    </div>
+                    <div class="modal-body" style="text-align: center;">
+                        <img src="image/D'kaliurang resort2.jpg" width="100%">
+                        <br><br>
+                        <p>
+                            Memiliki range harga yang berbeda mulai dari Rp480.000,- saja, kamu sudah bisa menikmati villa di Jogja yang unik banget! Fasilitas tambahan yang ditawarkan pun cukup memanjakanmu selama bermalam di sini, mulai dari kolam renang pribadi, gazebo, outbound, restoran, hingga lava tour!
+                        </p>
+                        <p>
+                            Alamat: Jl. Boyong Kaliurang Barat, Bojong, Hargobinangun, Kec. Kabupaten Sleman, DI Yogyakarta
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="button btn btn-primary" href="https://www.traveloka.com/id-id/hotel/indonesia/dkaliurang-resort--convention--9000000806437">Pesan</a>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        
+    </body>
+</html>
